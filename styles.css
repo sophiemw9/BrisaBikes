@@ -1,0 +1,33 @@
+
+/* navbar */
+button{
+    color: #f8a488 !important;
+    border-color: #f8a488 !important;
+    font-size: 20px !important;
+}
+
+button:hover {
+    color: white !important;
+    background-color: #f8a488 !important;
+}
+
+.navbar {
+    background-color: gray !important;
+}
+
+.navbar-text{
+    color: #f8a488 !important;
+    font-size: 22px !important;
+}
+
+.active{
+    color: white !important;
+    font-size: 22px !important;
+}
+
+/* body */
+body{
+    background-color: #f5e8c7 !important;
+}
+
+
