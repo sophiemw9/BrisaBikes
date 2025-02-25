@@ -20,6 +20,10 @@ button:hover {
     font-size: 22px !important;
 }
 
+.navbar-text:hover{
+    color:white !important;
+}
+
 .active{
     color: white !important;
     font-size: 22px !important;
