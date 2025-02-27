@@ -12,7 +12,11 @@ button:hover {
 }
 
 .navbar {
-    background-color: gray !important;
+    background-color: #212529 !important;
+}
+
+.navbar-index {
+    background-color: #212529 !important;
 }
 
 .navbar-text{
