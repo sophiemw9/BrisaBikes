@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <link rel="stylesheet" href="styles.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -37,6 +39,64 @@
     </div>
   </nav>
   
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Location Map</title>
+    
+
+
+    <style>
+        /* Adjust the map height */
+        #map {
+            height: 700px;
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Bootstrap Container for the Map -->
+<div class="container mt-5">
+    <h1 class="text-center">Locate</h1>
+    <p class="text-center">Find available bikes at various locations.</p>
+    
+    <div id="map"></div>
+</div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+    // Initialize map and set view to a default location (latitude, longitude, zoom level)
+    var map = L.map('map').setView([51.4545, -2.5879], 16);
+
+    // Add OpenStreetMap tile layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Add bike location markers (Replace with real bike coordinates)
+    var bikeLocations = [
+        { lat: 51.456934, lng: -2.591344, name: "Bike 1" },
+        { lat: 51.454100, lng: -2.589284, name: "Bike 2" },
+        { lat: 51.454818, lng: -2.592731, name: "Bike 3" },
+        { lat: 51.452509, lng: -2.581105, name: "Bike 3" }
+    ];
+
+    bikeLocations.forEach(location => {
+        L.marker([location.lat, location.lng])
+         .addTo(map)
+         .bindPopup(`<b>${location.name}</b><br>Available charge: 100%`); // Example popup
+    });
+</script>
+
+</body>
+</html>
+
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
