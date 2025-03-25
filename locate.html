@@ -4,11 +4,45 @@
 <link rel="stylesheet" href="https://use.typekit.net/vis4baj.css">
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <style>
+      h1 {
+        font-family: neuzeit-grotesk, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+    
+      p {
+        font-family: neuzeit-grotesk, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    
+      .navbar{
+        font-family: neuzeit-grotesk, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    
+      .btn{
+        font-family: neuzeit-grotesk, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+    
+      h2 {
+        font-family: neuzeit-grotesk, sans-serif;
+        font-weight: 700;
+        font-style: bold;
+      }
+    </style>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brisa Bikes</title>
+    <link rel="icon" type="image/x-icon" href="/images/logomark.png">
 </head>
 <body>
 
@@ -85,7 +119,13 @@
         { lat: 51.456934, lng: -2.591344, name: "Bike 1" },
         { lat: 51.454100, lng: -2.589284, name: "Bike 2" },
         { lat: 51.454818, lng: -2.592731, name: "Bike 3" },
-        { lat: 51.452509, lng: -2.581105, name: "Bike 3" }
+        { lat: 51.452509, lng: -2.581105, name: "Bike 4" },
+        { lat: 51.449393, lng: -2.589810, name: "Bike 5" },
+        { lat: 51.450583, lng: -2.596130, name: "Bike 6" },
+        { lat: 51.453961, lng: -2.595230, name: "Bike 7" },
+        { lat: 51.457525, lng: -2.578735, name: "Bike 8" },
+        { lat: 51.454180, lng: -2.582941, name: "Bike 9" },
+        { lat: 51.456649, lng: -2.575587, name: "Bike 10" },
     ];
 
     bikeLocations.forEach(location => {
@@ -99,6 +139,24 @@
 </html>
 
 </body>
+
+<!--Footer-->
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Company, Inc</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <i class="bi bi-instagram text-body-secondary" style="font-size: 1rem;"></i>
+      <i class="bi bi-twitter-x text-body-secondary" style="font-size: 1rem;"></i>
+      <i class="bi bi-facebook text-body-secondary" style="font-size: 1rem;"></i>
+    </ul>
+  </footer>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
