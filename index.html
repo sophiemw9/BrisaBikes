@@ -3,8 +3,7 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://use.typekit.net/vis4baj.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <style>
   h1 {
     font-family: neuzeit-grotesk, sans-serif;
@@ -35,6 +34,18 @@
     font-weight: 700;
     font-style: bold;
   }
+  
+  label{
+    font-family: neuzeit-grotesk, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  input{
+    font-family: neuzeit-grotesk, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 </style>
 
 <html lang="en">
@@ -52,16 +63,16 @@
         <a class="navbar-brand" href="#">
             <img src="images/logo for navbar.png" alt="BrisaBikes" width="290" height="60">
           </a>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse justify-content-space-between d-flex" id="navbarTogglerDemo01">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link navbar-text" href="locate.html">Locate</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navbar-text" href="progress.html">Progress</a>
           </li>
           <li class="nav-item">
             <a class="nav-link navbar-text" href="pay.html">Pay</a>
@@ -132,12 +143,9 @@
       </div>
     </div>
 
-
-  <!--Featurettes-->
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
+    
+    <!--Card 1-->
+    <div class="row row-cols-md-3 cards">
       <div class="col-md-7">
         <h2 class="featurette-heading fw-normal lh-1">Redefining City Cycling.</h2>
         <p class="lead">As a Bristol based company, we understand the struggles of Saturday traffic and blocked roads during rush hour. We have conveniently placed bike stations across the city. Accessibility to a healthier lifestyle has never been easier. 
@@ -149,9 +157,8 @@
       </div>
     </div>
 
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
+    <!--Card 2-->
+    <div class="row row-cols-md-3 cards">
       <div class="col-md-7 order-md-2">
         <h2 class="featurette-heading fw-normal lh-1">For the Planet</h2>
         <p class="lead">By choosing to ride a bike instead of driving a car, you can help reduce the emissions, air pollution and noise pollution that affect our city. We use renewable energy to keep our electric bikes healthy for both our users and our planet.
@@ -163,9 +170,8 @@
       </div>
     </div>
 
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
+    <!--Card 3-->
+    <div class="row row-cols-md-3 cards">
       <div class="col-md-7">
         <h2 class="featurette-heading fw-normal lh-1">Free to Roam</h2>
         <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
@@ -202,5 +208,5 @@
   </footer>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </html>

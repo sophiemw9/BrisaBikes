@@ -6,6 +6,10 @@ button{
     font-size: 20px !important;
 }
 
+.hamburger{
+    background-color: #f8a488 !important;
+}
+
 button:hover {
     color: white !important;
     background-color: #f8a488 !important;
@@ -44,6 +48,44 @@ p {
 
 .accent{
     color: #f8a488 !important;
+}
+
+.navbar-toggle{
+    background-color: #f8a488;
+}
+
+.signin{
+    padding-top: 20%;
+    justify-content: center;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-bottom: 19%;
+}
+
+.confirm{
+    background-color: #212529 !important;
+}
+
+input{
+    background-color:#212529 !important;
+    color:white !important; 
+    border-color:#f8a488 !important;
+
+}
+
+input.active{
+    border-color: #f8a488 !important;
+    box-shadow: #f8a488 !important;
+}
+
+.card{
+    background-color: #212529;
+    color:white;
+
+}
+
+.cards{
+    padding-top: 5%;
 }
 
 
