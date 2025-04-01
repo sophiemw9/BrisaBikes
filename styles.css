@@ -88,4 +88,8 @@ input.active{
     padding-top: 5%;
 }
 
-
+.images{
+    max-width: 100%;
+    height:auto;
+    padding-bottom:5%;
+}
