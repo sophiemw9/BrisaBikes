@@ -34,7 +34,7 @@
     font-weight: 700;
     font-style: bold;
   }
-  
+
   label{
     font-family: neuzeit-grotesk, sans-serif;
     font-weight: 400;
@@ -58,32 +58,39 @@
 <body>
 
 <!--Navbar-->
-<nav class="navbar navbar-index navbar-bg navbar-expand-lg bg-body" style="background-color:#6d7275;">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="images/logo for navbar.png" alt="BrisaBikes" width="290" height="60">
-          </a>
-          <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-bg bg-body" style="background-color:#6d7275;">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+          <img src="images/logo for navbar.png" alt="BrisaBikes" width="290" height="60">
+      </a>
+      <!-- Hamburger Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
-      <div class="collapse navbar-collapse justify-content-space-between d-flex" id="navbarTogglerDemo01">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navbar-text" href="locate.html">Locate</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navbar-text" href="pay.html">Pay</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navbar-text" href="pricing.html">Memberships</a>
-          </li>
-          <button class="btn btn-outline-success" onclick="window.location.href='signin.html';" type="submit">Sign In</button>
+      </button>
+      
+      <!-- Collapsible Navbar Content -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link navbar-text" href="locate.html">Locate</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link navbar-text" href="pay.html">Pay</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link navbar-text" href="pricing.html">Memberships</a>
+              </li>
+          </ul>
+          <!-- Sign In Button -->
+          <button class="btn btn-outline-success" onclick="window.location.href='signin.html';">Sign In</button>
       </div>
-    </div>
-  </nav>
+  </div>
+</nav>
+
+
 
 <!--Electric or manual-->
     <div class="position-relative vh-100 d-flex align-items-center justify-content-center text-white">
@@ -139,7 +146,7 @@
         </div>
         <h2 class="fw-normal">Ride</h2>
         <p>And lastly, cycle anywhere in the city for as long as you like. Leaving the bike in a cycle station located conveniently throughout the city. </p>
-        <p><a class="btn btn-dark" href="progress.html">View details &raquo;</a></p>
+        <p><a class="btn btn-dark" href="pricing.html">View details &raquo;</a></p>
       </div>
     </div>
 

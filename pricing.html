@@ -59,29 +59,37 @@
 <body>
 
 <!--Navbar-->
-<nav class="navbar navbar-bg navbar-expand-md bg-body" style="background-color:#6d7275;">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="images/logo for navbar.png" alt="BrisaBikes" width="290" height="60">
-          </a>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link navbar-text" href="index.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navbar-text" href="locate.html">Locate</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navbar-text" href="pay.html">Pay</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Memberships</a>
-          </li>
-          <button class="btn btn-outline-success" onclick="window.location.href='signin.html';" type="submit">Sign In</button>
+<nav class="navbar navbar-expand-lg navbar-bg bg-body" style="background-color:#6d7275;">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+          <img src="images/logo for navbar.png" alt="BrisaBikes" width="290" height="60">
+      </a>
+      <!-- Hamburger Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Collapsible Navbar Content -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link navbar-text" href="index.html">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link navbar-text" href="locate.html">Locate</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link navbar-text" href="pay.html">Pay</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" href="#">Memberships</a>
+              </li>
+          </ul>
+          <!-- Sign In Button -->
+          <button class="btn btn-outline-success" onclick="window.location.href='signin.html';">Sign In</button>
       </div>
-    </div>
-  </nav>
+  </div>
+</nav>
   
 <!--Pricing options blocks-->
 
@@ -94,18 +102,18 @@
       </div>
     </header>
   
-    <div>
-      <img class="images" src="images/bike.jpg" alt="bike">
+    <div class="image-card">
+      <img class="images fullscreen-image" src="images/bike.jpg" alt="bike">
     </div>
-    
+
     <main>
-      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center cards">
         <div class="col">
           <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3">
               <h4 class="my-0 fw-normal">Free</h4>
             </div>
-            <div class="card-body">
+            <div class="card-body membership-cards">
               <h1 class="card-title pricing-card-title">£0<small class="text-body-white fw-light">/month</small></h1>
               <ul class="list-unstyled mt-3 mb-4">
                 <li>£1.50 for your first mile</li>
@@ -114,7 +122,7 @@
                 <li>Help center access</li>
                 <li>Progress trackers</li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-outline-primary" onclick="window.location.href='pay.html';">Sign up for free</button>
+              <button type="button" class="w-100 btn btn-lg btn-outline-primary" onclick="window.location.href='signin.html';">Sign up for free</button>
             </div>
           </div>
         </div>
@@ -123,7 +131,7 @@
             <div class="card-header py-3">
               <h4 class="my-0 fw-normal">Pro</h4>
             </div>
-            <div class="card-body">
+            <div class="card-body membership-cards">
               <h1 class="card-title pricing-card-title">£15<small class="text-body-white fw-light">/month</small></h1>
               <ul class="list-unstyled mt-3 mb-4">
                 <li>Free for the first mile</li>
@@ -132,7 +140,7 @@
                 <li>Help center access</li>
                 <li>Developed progress tracker</li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg " onclick="window.location.href='pay.html';">Get started</button>
+              <button type="button" class="w-100 btn btn-lg " onclick="window.location.href='signin.html';">Get started</button>
             </div>
           </div>
         </div>
@@ -141,7 +149,7 @@
             <div class="card-header py-3">
               <h4 class="my-0 fw-normal">Olympic</h4>
             </div>
-            <div class="card-body">
+            <div class="card-body membership-cards">
               <h1 class="card-title pricing-card-title">£39<small class="text-body-white fw-light">/month</small></h1>
               <ul class="list-unstyled mt-3 mb-4">
                 <li>Ride for free up to any mileage</li>
@@ -150,7 +158,7 @@
                 <li>Help center access</li>
                 <li>Developed progress tracker</li>
               </ul>
-              <button type="button" href="pay.html" class="w-100 btn btn-lg" onclick="window.location.href='pay.html';">Get started</button>
+              <button type="button" href="pay.html" class="w-100 btn btn-lg" onclick="window.location.href='signin.html';">Get started</button>
             </div>
           </div>
         </div>
